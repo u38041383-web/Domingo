@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF5200"> <!-- Zomato/Food style branding -->
+    <title>Domingo - Fast, Fresh, Delivered</title>
+</head>
+<body>
+
+    <!-- A. Global Header: Sticky & Interactive -->
+    <header id="site-header">
+        <div class="container flex-row">
+            <div class="logo">DOMINGO</div>
+            <div class="location-picker">📍 Current Location: Kharagpur</div>
+            <nav class="user-actions">
+                <button class="btn-ghost">Login</button>
+                <button class="btn-primary">Sign Up</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- B. Hero Section: Optimized for Conversion -->
+    <section id="hero-banner">
+        <div class="hero-content">
+            <h1>Discover the best food in your city</h1>
+            <div class="search-engine-wrapper">
+                <input type="search" placeholder="Search for restaurant, item or cuisine" id="main-search">
+            </div>
+        </div>
+    </section>
+
+    <!-- C. Application Main Logic -->
+    <main id="app-root">
+        
+        <!-- Quick Filter Pills: Advanced UI -->
+        <section class="filters">
+            <button class="filter-chip">Offers</button>
+            <button class="filter-chip">Rating 4.0+</button>
+            <button class="filter-chip">Pure Veg</button>
+        </section>
+
+        <!-- Dynamic Grid: CSS Grid layout ready -->
+        <section class="restaurant-feed">
+            <h2 class="section-title">Trending Restaurants</h2>
+            <div class="grid-container">
+                <!-- Data-driven Component -->
+                <article class="restaurant-card">
+                    <div class="thumbnail"></div>
+                    <div class="card-body">
+                        <h3>Grand Buffet</h3>
+                        <p class="cuisine">North Indian, Chinese</p>
+                        <div class="metadata">
+                            <span>⭐ 4.5</span>
+                            <span>30-40 min</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- More articles will be injected via API -->
+            </div>
+        </section>
+    </main>
+
+    <!-- D. SEO Optimized Footer: Multi-column structure -->
+    <footer id="main-footer">
+        <div class="footer-grid">
+            <section class="footer-col">
+                <h3>About Domingo</h3>
+                <nav>
+                    <a href="#">Who We Are</a>
+                    <a href="#">Blog</a>
+                </nav>
+            </section>
+            <section class="footer-col">
+                <h3>For Foodies</h3>
+                <nav>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Community</a>
+                </nav>
+            </section>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+:root { --hue: 200; }
+
+body {
+    background: #000;
+    margin: 0; min-height: 100vh;
+    display: grid; place-items: center;
+    perspective: 2000px; overflow: hidden;
+}
+
+.singularity-fabric {
+    width: clamp(250px, 35vw, 400px);
+    aspect-ratio: 1/1;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(100px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50% 40% 60% 30% / 40% 60% 30% 50%;
+    
+    /* Hardware-Coupled Transition */
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                border-radius 1s ease;
+    cursor: crosshair;
+    box-shadow: 0 0 150px hsla(var(--hue), 100%, 50%, 0.3);
+}
+
+.exploded {
+    transform: scale(3) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+}
